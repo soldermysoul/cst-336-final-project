@@ -1,0 +1,81 @@
+
+<%- include('partials/header.ejs') %>
+ <body>
+ <h1 class="text-center">Login Page</h1>
+ <div class="container">
+     <div id="warning-area">
+        <% if(typeof loginError != "undefined" && loginError) { %>
+        <div class="alert alert-danger" role="alert">
+            <%-message%>
+        </div>
+        <% } %> 
+    </div>
+ </div>
+ <div class="container">
+        <% if (typeof currentLogin != "undefined" && currentLogin) { %>
+        
+        
+        <h4>Please see below for current account information, use the input below to change your favorite team. </h4>
+        <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">User ID</th>
+          <th scope="col">Username</th>
+          <th scope="col">Team</th>
+          <th scope="col">Update Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% rows.forEach(function(row, i){ %>
+        <tr>
+        <td><%= row.userId  %></td>
+        <td><%= row.username %></td>
+        <td><form method="POST" action="/updateTeam"><input type="text" id="team" name="teamName" placeholder="<%= row.team  %>"><br><br></td>
+        <td><input type="submit" class="btn btn-primary" value="Submit"></form></td>
+        </tr>
+      
+        <% });%>
+        </tbody>
+        </table>  
+        <h4 class="text-center">You are currently logged in, click the button below to log out.</h4>
+        <div class="text-center">
+            <form action="/logout">
+                <button class="btn btn-danger form-button">
+                    Logout
+                </button>
+            </form>
+        </div>
+        
+        
+        <% } else { %>
+        
+         <form method="POST" action="/login">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" placeholder="Enter username">
+            <small id="usernameHelp" class="form-text text-muted">Please enter your username</small>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+            <small id="usernameHelp" class="form-text text-muted">Please enter your password</small>
+          </div>
+          <div class="form-check text-center">
+            <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" value="true">
+            <label class="form-check-label" for="checkbox">I agree to all policies on this website.</label>
+          </div>
+          <div class="text-center form-button">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+        
+        <% } %>
+        
+        
+        
+        
+    
+</div>
+<%- include('partials/footer.ejs') %>
+</body>
+</html>

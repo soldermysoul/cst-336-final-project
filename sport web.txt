@@ -1,0 +1,14 @@
+****Sports Webpage****
+
+Have a sign up page that lets user sign up for webpage. 
+
+Grab data from sports teams and display on pages.
+
+Lets user's interacts with webpage to get information from
+different teams that they weant to see
+
+Possible *fake* ticket purchasing sections?? 
+
+*Tips sections that could possibly be refreshed with qoutes from legeng sport players
+
+

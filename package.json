@@ -1,0 +1,30 @@
+{
+  "name": "cst336-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinmello32/cst336-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justinmello32/cst336-final/issues"
+  },
+  "homepage": "https://github.com/justinmello32/cst336-final#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bcrypt": "^5.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "install": "^0.13.0",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.6"
+  }
+}

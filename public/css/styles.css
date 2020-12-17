@@ -1,0 +1,172 @@
+body {
+	background-color: white;
+
+}
+
+.russle
+{
+    background-image: url("../img/russle.jpg");	
+    height: 100%;
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shopping-cart {
+  width: 750px;
+  margin: 80px auto;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+ 
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+.image {
+  margin-right: 50px;
+}
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+.total-section
+{
+  display: block;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+ 
+.description span {
+  display: block;
+  font-size: 12px;
+  color: blue;
+  
+  font-weight: bold;
+}
+ 
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  margin-top: 8px;
+  color: black;
+  font-weight: bold;
+  font-size:25px;
+}
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+/* Schedule Page */
+.card-title {
+  padding-top: 8rem;
+}
+
+.record-text {
+  font-size: 20px;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+footer {
+  text-align: center;
+}
+
+
+/*Front Page Styling */
+.carousel-inner {
+  max-height: 550px;
+}
+
+.fp-card {
+  text-align: center;
+}
+
+.fp-card-row {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#wrapper 
+{
+  
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.set
+{
+	width: 300px;
+	height: 40px;
+	text-align:center;
+	cursor: pointer;
+	box-shadow: 0 2px 0 white;
+	border-radius: 2px;
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #97233F;
+  
+  background-image: none;
+}
+
+#warning-area {
+  margin-top: 2rem;
+}
+
+.form-button {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: #f8f9fa;
+  color: rgba(0,0,0,.5);
+}

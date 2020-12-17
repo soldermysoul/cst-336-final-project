@@ -1,0 +1,117 @@
+<%- include('partials/header.ejs') %>
+
+<link href="css/styles.css" rel="stylesheet" type="text/css"/>
+<body class="russle">
+  
+  <div class="shopping-cart">
+  <!-- Title -->
+  <div class="title">
+    Shopping Bag
+  </div>
+
+  <!----- working ---->
+  <!--------- Product #1 ---------->
+  <div class="item">
+ 
+    <div class="image">
+      <img src="img/bucs.jpg" height="80px" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span>Bucs Jersey </span>
+    </div>
+    
+    <!--- Uses form control to calculate in real time prices --->
+
+    <select class="form-control calculate" id="setId" name="set" > 
+      <option data-price="0" value="0">Select an Option</option>
+		  <option data-price="100" value="1">1</option>
+      <option data-price="200" value="2">2</option>
+      <option data-price="300" value="3">3</option>
+      <option data-price="400" value="4">4</option>
+	  </select>
+    <div class="total-price" id="bucs">$100</div>
+  </div>
+  
+  <!--------- Product #2 ---------->
+  <div class="item">
+ 
+    <div class="image">
+      <img src="img/pits.jpg" height="80px" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span> Pits Jersey </span> </span>
+    </div>
+   <select class="form-control calculate" id="setId1" name="set" > 
+      <option data-price="0" value="0">Select an Option</option>
+		  <option data-price="200" value="1">1</option>
+      <option data-price="400" value="2">2</option>
+      <option data-price="600" value="3">3</option>
+      <option data-price="800" value="4">4</option>
+	  </select>
+    <div class="total-price" id="total2">$200</div>
+  </div>
+
+  <!--------- Product #3 ---------->
+  <div class="item">
+ 
+    <div class="image">
+      <img src="img/raiders.jpg" height="80px" alt="" />
+    </div>
+ 
+    <div class="description">
+      <span> Raiders Jersey </span>
+    </div>
+   <select class="form-control calculate" id="setId2" name="set" >
+      <option data-price="0" value="0">Select an Option</option>
+		  <option data-price="300" value="1">1</option>
+      <option data-price="600" value="2">2</option>
+      <option data-price="900" value="3">3</option>
+      <option data-price="1200" value="4">4</option>
+	  </select>
+    <div class="total-price" id="total1">$300</div>
+  </div>
+  
+ <!--------- Product #4 ---------->
+   <div class="item">
+ 
+    <div class="image">
+      <img src="img/ref.jpg" height="83px" width="80px"  alt="" />
+    </div>
+ 
+    <div class="description">
+      <span> Referee Shirt </span>
+    </div>
+    
+        <select class="form-control calculate" id="setId3" name="set"> 
+      <option data-price="0" value="0">Select an Option</option>
+		  <option data-price="10" value="1">1</option>
+      <option data-price="20" value="2">2</option>
+      <option data-price="30" value="3">3</option>
+      <option data-price="40" value="4">4</option>
+	  </select>
+    <div class="total-price" id="total1">$10</div>
+  </div>
+  
+  <div class="total-section">
+    Total:
+    <span name="total" id="total"></span>
+    Value:
+    
+    <input type="text" id="check" readonly/>
+ 
+ 
+  </div>
+  
+  <!--- wraps button to centered and give its own section -->
+  <button id="myButton" class="float-left submit-button" disabled>Submit</button>
+  
+  </div>
+  
+
+
+  </div>
+<%- include('partials/footer.ejs') %>
+</body>
+</html>

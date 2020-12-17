@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs') %>
+<body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        
+        
+    </script>
+	<h1 class="text-center">Current Schedule for Week <%-currentWeek %> </h1>
+	    
+	    
+	    <div class="container">
+	    <div id="sportsView"></div>
+	   
+        <% for (var i =0; i <= 15;  i++ ) { %>
+            <div class="card">
+              <!--<div class="card-header">-->
+              <!--  <%-nameArray[i] %>-->
+              <!--</div>-->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <img src="<%-awayTeamLogo[i] %>" class="img-fluid">
+                    <p class="text-center record-text"><%-awayTeamRecord[i]%></p>
+                  </div>
+                  <div class="col">
+                    <h5 class="card-title"><%-nameArray[i] %></h5>
+                  </div>
+                  <div class="col">
+                    <img src="<%-homeTeamLogo[i] %>" class="img-fluid">
+                    <p class="text-center record-text"><%-homeTeamRecord[i]%></p>
+                  </div>
+                </div>
+                <p class="card-text text-center">Venue: <%-venueArray[i] %></p>
+              </div>
+            </div>
+        <% } %>
+        
+        </div>
+
+   
+          
+         
+          
+          
+<%- include('partials/footer.ejs') %>
+</body>
+</html>
